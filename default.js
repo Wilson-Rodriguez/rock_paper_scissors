@@ -84,6 +84,10 @@ function playGame() {
         console.log('The player wins')
     }
 
+    if (humanScore == computerScore) {
+        console.log('Game Tie')
+    }
+
 }
 
 playGame()
