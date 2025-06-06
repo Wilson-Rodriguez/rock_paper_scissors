@@ -1,4 +1,3 @@
-console.log('banana')
 let rpsChoices = ['rock', 'paper', 'scissor']
 
 let humanScore = 0
@@ -69,6 +68,22 @@ function playRound(compChoice, humanChoice) {
     console.log(`Human Score: ${humanScore}`)
     console.log(`Computer Score: ${computerScore}`)
 }
-const computerChoice = getComputerChoice()
-const humanChoice = getHumanChoice()
-playRound(computerChoice, humanChoice)
+
+function playGame() {
+    for(let i=0; i<5; i++) {
+        const computerChoice = getComputerChoice()
+        const humanChoice = getHumanChoice()
+        playRound(computerChoice, humanChoice)
+    }
+
+    if (computerScore > humanScore) {
+        console.log('The computer wins')
+    }
+    
+    if (humanScore > computerScore) {
+        console.log('The player wins')
+    }
+
+}
+
+playGame()
