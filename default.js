@@ -23,21 +23,21 @@ function getHumanChoice() {
 function playRound(compChoice, humanChoice) {
     humanChoice = humanChoice.toLowerCase()
     if(compChoice == 'rock') {
-        if (humanChoice = 'rock') {
+        if (humanChoice == 'rock') {
             console.log('You Tie')
         }
-        else if (humanChoice = 'paper') {
+        else if (humanChoice == 'paper') {
             console.log('You Win')
             humanScore++
         }
-        else if (humanChoice = 'scissor') {
+        else if (humanChoice == 'scissor') {
             console.log('You Lose')
             computerScore++
         }
     }
 
     else if (compChoice == 'paper') {
-        if (humanChoice = 'rock') {
+        if (humanChoice == 'rock') {
             console.log('You Lose')
             computerScore++
         }
@@ -46,7 +46,7 @@ function playRound(compChoice, humanChoice) {
         }
         else if (humanChoice == 'scissor') {
             console.log('You Win')
-            humanchoice++
+            humanScore++
         }
     }
 
@@ -61,7 +61,6 @@ function playRound(compChoice, humanChoice) {
         }
         else if (humanChoice == 'scissor') {
             console.log('You Tie')
-            humanchoice++
         }
     }
 
